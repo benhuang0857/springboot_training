@@ -1,0 +1,22 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /home
+  tomcat:
+    uri-encoding: utf-8
+logging:
+  level:
+    root: info
+    com.ben: warn
+  file:
+    name: logs/system.log
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mydemo?serverTimezone=UTC&useSSL=false
+    username: root
+    password:
